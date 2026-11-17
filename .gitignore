@@ -1,0 +1,15 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+.gradio/
+data/sahayak.db*
+data/agent_checkpoints.sqlite*
+data/chroma/
+data/audio/*
+data/uploads/*
+data/cache/*
+!data/audio/.gitkeep
+!data/uploads/.gitkeep

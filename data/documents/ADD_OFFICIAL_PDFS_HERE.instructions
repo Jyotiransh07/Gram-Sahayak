@@ -1,0 +1,6 @@
+Place official downloaded agriculture, scheme and general health guidance PDFs here.
+The index starts empty intentionally: no fake government sources are preloaded.
+Add each file's source URL to sources.json, then run:
+python -m scripts.ingest
+Optional semantic search: pip install -r requirements-rag.txt
+python -m scripts.ingest --vectors

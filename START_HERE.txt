@@ -1,0 +1,31 @@
+GRAM SAHAYAK — START HERE (WINDOWS, HINDI + ENGLISH)
+====================================================
+1. Install Python 3.11, Ollama and FFmpeg. (README.md has links.)
+2. Extract this ZIP to e.g. Desktop\Gram_Sahayak_Multi_Agent.
+3. Open Command Prompt inside that extracted folder.
+4. Run: py -3.11 -m venv .venv
+5. Run: .venv\Scripts\activate
+6. Run: python -m pip install --upgrade pip
+7. Run: python -m pip install -r requirements.txt
+8. Run: python -m pip install -r requirements-voice.txt
+9. Run: copy .env.example .env
+10. Run: ollama pull llama3.2:3b
+11. Add permitted official PDFs to data\documents\ (see API_SETUP.md).
+12. Run: python -m scripts.ingest
+13. Open terminal 1 in project: python -m uvicorn app.api:app --reload --host 127.0.0.1 --port 8000
+14. Open terminal 2 in project: python frontend.py
+15. Open: http://127.0.0.1:7860
+
+OPTIONAL: actual mandi API key + resource ID, Gemini free-tier key, Telegram bot token:
+open API_SETUP.md for every step. You do NOT need keys for local AI,
+Open-Meteo weather, NASA POWER climate, or basic Gradio.
+
+AI AGENTS: 11 LangGraph nodes (see AGENT_WORKFLOW.md).
+EXCLUDED: n8n, paid-only services, Marathi UI or speech support.
+
+VOICE: install requirements-voice.txt. Manual mic works on stop recording;
+hands-free VAD is experimental. Hindi/English TTS uses gTTS online by default;
+set TTS_BACKEND=mms with requirements-mms.txt for an offline alternative.
+
+LOCAL ONLY: Do not open the unauthenticated backend to the internet.
+TESTING: python -m pytest -q

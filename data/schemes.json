@@ -1,0 +1,30 @@
+[
+  {
+    "name": "PM-KISAN",
+    "state": "",
+    "keywords": ["pm kisan", "pm-kisan", "किसान सम्मान", "income support", "financial help", "money"],
+    "description": "Central government farmer income-support program. Please check the current landholding, family and exclusion criteria on the official website.",
+    "url": "https://pmkisan.gov.in/"
+  },
+  {
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "state": "",
+    "keywords": ["insurance", "crop insurance", "फसल बीमा", "pmfby", "crop loss"],
+    "description": "Crop-insurance program. Covered crops, deadlines, areas and enrollment rules change by season and state; verify current official notifications.",
+    "url": "https://pmfby.gov.in/"
+  },
+  {
+    "name": "Soil Health Card",
+    "state": "",
+    "keywords": ["soil", "मिट्टी", "soil test", "soil health", "मृदा"],
+    "description": "Official program for accessing soil-testing-related information and advisories. Check the current local implementation and available services.",
+    "url": "https://soilhealth.dac.gov.in/"
+  },
+  {
+    "name": "myScheme discovery portal",
+    "state": "",
+    "keywords": ["scheme", "योजना", "सब्सिडी", "benefit", "support", "government"],
+    "description": "Official portal for exploring central and state government schemes. The application cannot determine final eligibility or approval.",
+    "url": "https://www.myscheme.gov.in/"
+  }
+]
